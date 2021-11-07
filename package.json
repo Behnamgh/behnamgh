@@ -1,5 +1,6 @@
 {
   "name": "behnamgh",
+  "type": "module",
   "version": "1.0.0",
   "description": "Personla NPM card",
   "main": "index.js",
@@ -10,7 +11,7 @@
     "type": "git",
     "url": "git@github-behnamgh:Behnamgh/behnamgh.git"
   },
-  "author": "Behnam Ghafary",
+  "author": "Behnam Ghafary <behnam.ghafary@gmail.com>",
   "license": "MIT",
   "dependencies": {
     "boxen": "^6.2.1",

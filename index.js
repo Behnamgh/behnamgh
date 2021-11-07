@@ -2,11 +2,11 @@
 
 "use strict";
 
-const boxen = require("boxen");
-const chalk = require("chalk");
-const inquirer = require("inquirer");
-const clear = require("clear");
-const open = require("open");
+import boxen from "boxen";
+import chalk from "chalk";
+import inquirer from "inquirer";
+import clear from "clear";
+import open from "open";
 
 clear();
 
@@ -40,18 +40,14 @@ const questions = [
 const data = {
     name: chalk.bold.green("        Behnam Ghafary"),
 
-    blog: chalk.gray("https://dev.to/") + chalk.whiteBright("cdthomp1"),
     twitter: chalk.gray("https://twitter.com/") + chalk.cyan("behnam_ghafary"),
     github: chalk.gray("https://github.com/") + chalk.green("behnamgh"),
     linkedin: chalk.gray("https://linkedin.com/in/") + chalk.blue("behnamghafary"),
     npx: chalk.red("npx") + " " + chalk.white("behnamghafary"),
 
-    labelWork: chalk.white.bold("       Work:"),
-    labelBlog: chalk.white.bold("     Blog:"),
     labelTwitter: chalk.white.bold("    Twitter:"),
     labelGitHub: chalk.white.bold("     GitHub:"),
     labelLinkedIn: chalk.white.bold("   LinkedIn:"),
-    labelWeb: chalk.white.bold("        Web:"),
     labelCard: chalk.white.bold("       Card:")
 };
 
@@ -60,12 +56,9 @@ const me = boxen(
     [
         `${data.name}`,
         ``,
-        `${data.labelWork}  ${data.work}`,
-        `${data.labelBlog}  ${data.blog}`,
         `${data.labelTwitter}  ${data.twitter}`,
         `${data.labelGitHub}  ${data.github}`,
         `${data.labelLinkedIn}  ${data.linkedin}`,
-        `${data.labelWeb}  ${data.web}`,
         ``,
         `${data.labelCard}  ${data.npx}`,
         ``,
