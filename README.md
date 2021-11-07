@@ -7,7 +7,7 @@
 #### 🔭 My Latest Projects:
 - [Enlightened Robot](https://enlightenedrobot.com/)
 - [Ayandeyeman.ir](https://ayandeyeman.ir/)
-
+#### 😄 FUN: You can find my personal info through NPM package by running `npx behnamghafary` (Reference: [HERE](https://github.com/Ridermansb/ridermansb))
 
 
 <!--
