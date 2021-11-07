@@ -10,7 +10,8 @@
 #### 😄 FUN: You can find my personal info through NPM package by running 
 ```bash
 npx behnamghafary
-``` (Reference: [HERE](https://github.com/Ridermansb/ridermansb))
+```
+(Reference: [HERE](https://github.com/Ridermansb/ridermansb))
 
 
 <!--
