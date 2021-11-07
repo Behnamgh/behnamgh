@@ -43,11 +43,13 @@ const data = {
     twitter: chalk.gray("https://twitter.com/") + chalk.cyan("behnam_ghafary"),
     github: chalk.gray("https://github.com/") + chalk.green("behnamgh"),
     linkedin: chalk.gray("https://linkedin.com/in/") + chalk.blue("behnamghafary"),
+    email: chalk.cyan("behnam.ghafary") + chalk.gray("@gmail.com"),
     npx: chalk.red("npx") + " " + chalk.white("behnamghafary"),
 
     labelTwitter: chalk.white.bold("    Twitter:"),
     labelGitHub: chalk.white.bold("     GitHub:"),
     labelLinkedIn: chalk.white.bold("   LinkedIn:"),
+    labelEmail: chalk.white.bold("    Email:"),
     labelCard: chalk.white.bold("       Card:")
 };
 
@@ -59,6 +61,8 @@ const me = boxen(
         `${data.labelTwitter}  ${data.twitter}`,
         `${data.labelGitHub}  ${data.github}`,
         `${data.labelLinkedIn}  ${data.linkedin}`,
+        ``,
+        `${data.labelEmail}  ${data.email}`,
         ``,
         `${data.labelCard}  ${data.npx}`,
         ``,
