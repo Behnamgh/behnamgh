@@ -7,6 +7,12 @@ import chalk from "chalk";
 import inquirer from "inquirer";
 import clear from "clear";
 import open from "open";
+import ora from "ora";
+import request from "request";
+import cliSpinners from "cli-spinners";
+import fs from "fs";
+import path from "path";
+
 
 clear();
 
@@ -24,6 +30,23 @@ const questions = [
                 value: () => {
                     open("mailto:behnam.ghafary@gmail.com");
                     console.log("\nDone, see you soon.\n");
+                }
+            },
+            {
+                name: `Download my ${chalk.magentaBright.bold("Resume")}?`,
+                value: () => {
+                    // cliSpinners.dots;
+                    const loader = ora({
+                        text: ' Downloading Resume',
+                        spinner: cliSpinners.material,
+                    }).start();
+                    let pipe = request('https://bit.ly/3qg0hm3').pipe(fs.createWriteStream('./Behnam Ghafary-CV.pdf'));
+                    pipe.on("finish", function () {
+                        let downloadPath = path.join(process.cwd(), 'Behnam Ghafary-CV.pdf')
+                        console.log(`\nResume Downloaded at ${downloadPath} \n`);
+                        open(downloadPath)
+                        loader.stop();
+                    });
                 }
             },
             {
