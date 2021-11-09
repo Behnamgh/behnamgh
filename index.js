@@ -40,7 +40,7 @@ const questions = [
                         text: ' Downloading Resume',
                         spinner: cliSpinners.material,
                     }).start();
-                    let pipe = request('https://bit.ly/3qg0hm3').pipe(fs.createWriteStream('./Behnam Ghafary-CV.pdf'));
+                    let pipe = request('https://bit.ly/3GZzwbA').pipe(fs.createWriteStream('./Behnam Ghafary-CV.pdf'));
                     pipe.on("finish", function () {
                         let downloadPath = path.join(process.cwd(), 'Behnam Ghafary-CV.pdf')
                         console.log(`\nResume Downloaded at ${downloadPath} \n`);
