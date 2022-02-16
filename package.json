@@ -1,7 +1,7 @@
 {
   "name": "behnamgh",
   "type": "module",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Personla NPM card",
   "main": "index.js",
   "scripts": {
